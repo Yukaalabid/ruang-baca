@@ -2255,7 +2255,10 @@ svg {
   color: var(--ink);
   font-size: 11px;
   line-height: 1.4;
+
+  /* Membatasi judul maksimal 3 baris */
   -webkit-box-orient: vertical;
+  line-clamp: 3;
   -webkit-line-clamp: 3;
 }
 .related-book-copy small {

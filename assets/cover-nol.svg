@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" role="img" aria-label="Sampul buku MULAI DARI NOL">
+  <rect width="400" height="560" fill="#DBA77B"/>
+  <rect x="18" y="18" width="364" height="524" rx="3" fill="none" stroke="#FFF4E2" stroke-opacity=".24" stroke-width="2"/>
+  <circle cx="320" cy="116" r="79" fill="#284D3D" opacity=".92"/>
+  <circle cx="320" cy="116" r="48" fill="none" stroke="#FFF4E2" stroke-width="2" opacity=".65"/>
+  <path d="M40 145 Q105 90 170 145 T300 145" fill="none" stroke="#FFF4E2" stroke-width="3" opacity=".48"/>
+  <path d="M44 160 Q109 105 174 160 T304 160" fill="none" stroke="#FFF4E2" stroke-width="1.5" opacity=".48"/>
+  <text x="42" y="56" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="4" fill="#FFF4E2">RUANG BACA</text>
+  <text x="42" y="255" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="800" letter-spacing="-1.1" fill="#FFF4E2">MULAI DARI</text>
+  <text x="42" y="292" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="800" letter-spacing="-1.1" fill="#FFF4E2">NOL</text>
+  <path d="M42 321 H125" stroke="#284D3D" stroke-width="7" stroke-linecap="round"/>
+  <g transform="translate(42 362)">
+    <rect width="316" height="105" rx="2" fill="#FFF4E2" opacity=".09"/>
+    <path d="M18 72 C65 18 100 97 146 43 S231 29 280 63" stroke="#FFF4E2" stroke-width="2.6" fill="none" opacity=".75"/>
+    <path d="M18 84 C65 30 100 109 146 55 S231 41 280 75" stroke="#284D3D" stroke-width="4" fill="none"/>
+  </g>
+  <text x="42" y="505" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#FFF4E2">ALYA MAHESWARI</text>
+  <text x="358" y="505" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" text-anchor="end" fill="#FFF4E2" opacity=".6">04</text>
+</svg>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Detail buku di Ruang Baca — toko buku online demo untuk proyek UTS."
+    />
+    <title>Detail Buku — Ruang Baca</title>
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <!-- Bootstrap 5.3.8 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="assets/books.js" defer></script>
+    <script src="detail.js" defer></script>
+  </head>
+  <body class="product-page">
+    <div class="announcement-bar">
+      <p>
+        Temukan bacaan baru, temukan versi terbaik dirimu
+        <span aria-hidden="true">✦</span>
+      </p>
+    </div>
+    <header class="site-header">
+      <div class="container header-inner detail-header-inner">
+        <a
+          class="brand"
+          href="index.html#beranda"
+          aria-label="Ruang Baca, kembali ke beranda"
+        >
+          <img src="assets/logo.svg" alt="" width="42" height="42" />
+          <span>ruang<span class="brand-accent">baca.</span></span>
+        </a>
+        <nav class="detail-nav" aria-label="Navigasi halaman detail">
+          <a href="index.html#koleksi">Koleksi Buku</a>
+          <a href="index.html#kategori">Kategori</a>
+          <a href="index.html#pesan">Pesan Buku</a>
+        </nav>
+        <a
+          class="cart-button detail-cart-button"
+          href="index.html?cart=open"
+          aria-label="Buka keranjang belanja"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L20 8H6"
+            />
+            <circle cx="9.5" cy="19" r="1.3" />
+            <circle cx="17" cy="19" r="1.3" />
+          </svg>
+          <span class="cart-label">Keranjang</span>
+          <span class="cart-count" id="detailCartCount">0</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="product-detail-main">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html#beranda">Beranda</a
+          ><span aria-hidden="true">›</span>
+          <a href="index.html#koleksi">Koleksi Buku</a
+          ><span aria-hidden="true">›</span>
+          <span id="breadcrumbBookName">Detail Buku</span>
+        </nav>
+
+        <section
+          class="product-detail-layout"
+          id="productDetail"
+          aria-labelledby="productTitle"
+        >
+          <div class="product-loading" role="status">Memuat detail buku...</div>
+        </section>
+
+        <section
+          class="product-description-panel"
+          id="bookDescriptionPanel"
+          hidden
+        >
+          <div class="product-tab-heading">
+            <span class="product-tab is-active">Deskripsi Buku</span
+            ><span class="product-tab">Informasi Produk</span>
+          </div>
+          <div class="product-description-grid">
+            <div>
+              <p class="eyebrow">CERITA DI BALIK SAMPUL</p>
+              <h2>Kenali bukunya lebih dekat.</h2>
+            </div>
+            <div>
+              <p id="longDescription"></p>
+              <dl class="product-specs" id="productSpecs"></dl>
+            </div>
+          </div>
+        </section>
+
+        <section class="related-section" id="relatedSection" hidden>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">MUNGKIN KAMU SUKA</p>
+              <h2>Bacaan <span>lainnya.</span></h2>
+            </div>
+            <a class="text-link" href="index.html#koleksi"
+              >Lihat semua buku <span aria-hidden="true">→</span></a
+            >
+          </div>
+          <div class="related-grid" id="relatedBooks"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-bottom product-footer-bottom">
+        <div class="footer-credit">
+          <p>
+            © <span id="detailCurrentYear">2026</span> Ruang Baca. Proyek UTS
+            Pemrograman Web Dasar.
+          </p>
+          <p class="footer-student">
+            <strong>Nama:</strong> Muhammad Yuka Al Abid
+            <span aria-hidden="true">·</span>
+            <strong>NIM:</strong> A12.2025.07401
+          </p>
+        </div>
+        <a href="index.html#koleksi">Kembali ke koleksi ↑</a>
+      </div>
+    </footer>
+    <div class="toast" id="detailToast" role="status" aria-live="polite"></div>
+  </body>
+</html>
